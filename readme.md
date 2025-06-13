@@ -47,30 +47,28 @@ CORS
 | DELETE | `/attendance/:id`            | Eliminar registro de asistencia         |
 
 
-## ⚙️ Instalación
-Prerrequisitos
+# Deploy:
+https://exatian-back.onrender.com
 
-Node.js (>=18.0.0)
-npm o yarn
+En caso de utilizar el deploy esperar unos minutos a que se levante el servidor debido a que esta alojado en render y en el plan gratis al estar inactivo se apaga.
 
-## Pasos de instalación
+## Instalación
 
-Clonar el repositorio
-bashgit clone https://github.com/santipaz19/Exatian-Back.git
-cd Exatian-Back
+1. **Clonar el repositorio:**
 
-Instalar dependencias
-bashnpm install
+   ```bash
+   git clone https://github.com/santipaz19/Exatian-Back.git
+2. **Instalar dependencias: Usando npm:**
 
-🔧 Scripts Disponibles
-bash# Desarrollo con hot reload
+   npm install
+
+## Ejecucion
+
+Para iniciar el proyecto en modo desarrollo:
 npm run dev
 
-# Compilar TypeScript
-npm run build
+El proyecto se ejecutará en http://localhost:5000.
 
-# Iniciar servidor en producción
-npm start
 
 
 ## 🏗️ Arquitectura
