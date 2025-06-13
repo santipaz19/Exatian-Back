@@ -1,4 +1,4 @@
-##🏢 Exactian Backend
+## 🏢 Exactian Backend
 Un sistema de gestión de empleados y asistencias desarrollado con Node.js, Express, TypeScript y SQLite.
 ##🚀 Características
 
