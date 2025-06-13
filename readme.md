@@ -29,22 +29,22 @@ CORS
 
 | Método | Endpoint                | Descripción                          |
 |--------|-------------------------|--------------------------------------|
-| GET    | `/api/employees`        | Obtener todos los empleados          |
-| GET    | `/api/employees/:id`    | Obtener empleado por ID              |
-| POST   | `/api/employees`        | Crear nuevo empleado                 |
-| PUT    | `/api/employees/:id`    | Actualizar empleado                   |
-| DELETE | `/api/employees/:id`    | Eliminar empleado                    |
+| GET    | `/employees`        | Obtener todos los empleados          |
+| GET    | `/employees/:id`    | Obtener empleado por ID              |
+| POST   | `/employees`        | Crear nuevo empleado                 |
+| PUT    | `/employees/:id`    | Actualizar empleado                   |
+| DELETE | `/employees/:id`    | Eliminar empleado                    |
 
 ## 📋 Asistencias
 
 | Método | Endpoint                         | Descripción                             |
 |--------|----------------------------------|-----------------------------------------|
-| GET    | `/api/attendance`                | Obtener todas las asistencias           |
-| GET    | `/api/attendance/:id`            | Obtener asistencia por ID               |
-| GET    | `/api/attendance/employee/:employeeId` | Obtener asistencias por empleado   |
-| POST   | `/api/attendance/entry`          | Registrar entrada                       |
-| POST   | `/api/attendance/exit`           | Registrar salida                        |
-| DELETE | `/api/attendance/:id`            | Eliminar registro de asistencia         |
+| GET    | `/attendance`                | Obtener todas las asistencias           |
+| GET    | `/attendance/:id`            | Obtener asistencia por ID               |
+| GET    | `/attendance/employee/:employeeId` | Obtener asistencias por empleado   |
+| POST   | `/attendance/entry`          | Registrar entrada                       |
+| POST   | `/attendance/exit`           | Registrar salida                        |
+| DELETE | `/attendance/:id`            | Eliminar registro de asistencia         |
 ⚙️ Instalación
 Prerrequisitos
 
