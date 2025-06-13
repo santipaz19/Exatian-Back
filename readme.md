@@ -45,7 +45,9 @@ CORS
 | POST   | `/attendance/entry`          | Registrar entrada                       |
 | POST   | `/attendance/exit`           | Registrar salida                        |
 | DELETE | `/attendance/:id`            | Eliminar registro de asistencia         |
-⚙️ Instalación
+
+
+## ⚙️ Instalación
 Prerrequisitos
 
 Node.js (>=18.0.0)
