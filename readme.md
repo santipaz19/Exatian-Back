@@ -1,17 +1,17 @@
 ## 🏢 Exactian Backend
-Un sistema de gestión de empleados y asistencias.
+Sistema de gestión de empleados y asistencias.
 
-Gestión de Empleados: CRUD completo para empleados
+# Gestión de Empleados: CRUD completo para empleados
 
-Control de Asistencias: Registro de entradas y salidas con cálculo automático de duración
+# Control de Asistencias: Registro de entradas y salidas con cálculo automático de duración
 
-API RESTful: Endpoints bien estructurados y documentados
+# API RESTful: Endpoints bien estructurados y documentados
 
-Base de datos: SQLite con Sequelize ORM
+# Base de datos: SQLite con Sequelize ORM
 
-TypeScript: Tipado fuerte para mayor seguridad y productividad
+# TypeScript: Tipado fuerte para mayor seguridad y productividad
 
-Arquitectura modular: Código organizado por módulos y responsabilidades con principio DDD y SOLID
+# Arquitectura modular: Código organizado por módulos y responsabilidades con principio DDD y SOLID
 
 
 ## 🛠️ Tecnologías
