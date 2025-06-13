@@ -1,5 +1,5 @@
 ## 🏢 Exactian Backend
-Un sistema de gestión de empleados y asistencias desarrollado con Node.js, Express, TypeScript y SQLite.
+Un sistema de gestión de empleados y asistencias desarrollado con Node.js, Express, Sequilize, TypeScript y SQLite.
 ## 🚀 Características
 
 Gestión de Empleados: CRUD completo para empleados
