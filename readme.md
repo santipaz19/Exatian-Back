@@ -1,6 +1,6 @@
-🏢 Exactian Backend
+##🏢 Exactian Backend
 Un sistema de gestión de empleados y asistencias desarrollado con Node.js, Express, TypeScript y SQLite.
-🚀 Características
+##🚀 Características
 
 Gestión de Empleados: CRUD completo para empleados
 
@@ -15,7 +15,7 @@ TypeScript: Tipado fuerte para mayor seguridad y productividad
 Arquitectura modular: Código organizado por módulos y responsabilidades con principio DDD y SOLID
 
 
-🛠️ Tecnologías
+##🛠️ Tecnologías
 
 Node.js 
 Express.js 
@@ -51,7 +51,7 @@ Prerrequisitos
 Node.js (>=18.0.0)
 npm o yarn
 
-Pasos de instalación
+##Pasos de instalación
 
 Clonar el repositorio
 bashgit clone https://github.com/santipaz19/Exatian-Back.git
@@ -71,7 +71,7 @@ npm run build
 npm start
 
 
-🏗️ Arquitectura
+##🏗️ Arquitectura
 El proyecto sigue una arquitectura modular basada en:
 
 Controladores: Manejan las peticiones HTTP y respuestas
