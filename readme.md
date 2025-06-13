@@ -75,8 +75,11 @@ El proyecto se ejecutará en http://localhost:5000.
 El proyecto sigue una arquitectura modular basada en:
 
 Controladores: Manejan las peticiones HTTP y respuestas
+
 Servicios: Contienen la lógica de negocio
+
 Modelos: Definen la estructura de datos con Sequelize
+
 Rutas: Organizan los endpoints por módulos
 
 ## Estructura del Proyecto
