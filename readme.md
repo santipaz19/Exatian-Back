@@ -19,7 +19,7 @@ SQLite3 - Base de datos embebida
 CORS - Middleware para manejo de CORS
 dotenv - Gestión de variables de entorno
 
-📁 Estructura del Proyecto
+
 src/
 ├── config/
 │   └── database.ts          # Configuración de base de datos
