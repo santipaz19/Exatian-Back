@@ -22,7 +22,6 @@ export async function createEntry(employeeId: number, entryTime: Date) {
     }
 }
 
-// services/attendanceServices.ts
 export async function createExit(employeeId: number, exitTime: Date) {
     try {
         const openAttendance = await Attendance.findOne({

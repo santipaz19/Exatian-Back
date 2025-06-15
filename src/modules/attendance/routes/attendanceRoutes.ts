@@ -1,4 +1,3 @@
-// src/modules/attendance/routes/attendanceRoutes.ts
 import { Router } from 'express';
 
 

@@ -1,4 +1,4 @@
-// src/modules/attendance/models/Attendance.ts
+
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../../../config/database';
 import Employee from '../../employee/models/EmployeeModel';
