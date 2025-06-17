@@ -46,7 +46,7 @@ export const companyMockupData: CompanyCreationAttributes[] = [
         phone: "+5491145678901",
         email: "desarrollo@prueba.com",
         taxId: "30-99887766-3",
-        password: "desarrollo1",
+        password: "prueba1",
         isActive: true
     },
     {
