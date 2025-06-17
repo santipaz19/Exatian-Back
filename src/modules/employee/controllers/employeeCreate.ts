@@ -3,12 +3,12 @@ import * as employeeService from '../services/employeeServices';
 
 export async function createEmployee(req: Request, res: Response) {
     try {
-        const { fullName, dni, email, position, hireDate, isActive } = req.body;
+        const { fullName, dni, email, position, hireDate, isActive, companyId } = req.body;
 
         // Validaciones de campos requeridos
-        if (!fullName || !dni || !email || !position) {
+        if (!fullName || !dni || !email || !position || !companyId) {
             res.status(400).json({
-                message: 'Los campos fullName, dni, email y position son requeridos'
+                message: 'Los campos fullName, dni, email, position  y companyId son requeridos'
             });
             return;
         }
@@ -30,6 +30,7 @@ export async function createEmployee(req: Request, res: Response) {
             position: position.trim(),
             hireDate: hireDate || new Date(), // Usar fecha actual si no se proporciona
             isActive: isActive !== undefined ? isActive : true, // Por defecto activo
+            companyId
         };
 
         const employee = await employeeService.createEmployee(employeeData);

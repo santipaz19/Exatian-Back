@@ -1,5 +1,6 @@
 import { Model, DataTypes, Optional } from 'sequelize';
 import sequelize from '../../../config/database';
+import Company from '../../companies/models/CompaniesModel';
 
 // Define los atributos del empleado
 interface EmployeeAttributes {
@@ -9,11 +10,12 @@ interface EmployeeAttributes {
     email: string;
     position?: string;
     hireDate?: Date;
+    companyId?: number;
     isActive?: boolean;
 }
 
 // Define cuáles atributos son opcionales para la creación (p. ej. id, timestamps)
-interface EmployeeCreationAttributes extends Optional<EmployeeAttributes, 'id' | 'position' | 'hireDate' | 'isActive'> { }
+interface EmployeeCreationAttributes extends Optional<EmployeeAttributes, 'id' | 'position' | 'hireDate' | 'isActive' | 'companyId'> { }
 
 // Modelo Sequelize que implementa esos atributos
 class Employee extends Model<EmployeeAttributes, EmployeeCreationAttributes> implements EmployeeAttributes {
@@ -23,6 +25,7 @@ class Employee extends Model<EmployeeAttributes, EmployeeCreationAttributes> imp
     public email!: string;
     public position?: string;
     public hireDate?: Date;
+    public companyId!: number;
     public isActive?: boolean;
 }
 
@@ -52,6 +55,14 @@ Employee.init({
         type: DataTypes.DATE,
         allowNull: true,
     },
+    companyId: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+            model: Company,
+            key: 'id',
+        },
+    },
     isActive: {
         type: DataTypes.BOOLEAN,
         allowNull: true,
@@ -62,6 +73,12 @@ Employee.init({
     tableName: 'employees',
     timestamps: false,
 });
+
+
+// Definir asociaciones
+Company.hasMany(Employee, { foreignKey: 'companyId', as: 'employees' });
+Employee.belongsTo(Company, { foreignKey: 'companyId', as: 'company' });
+
 
 export default Employee;
 export type { EmployeeAttributes, EmployeeCreationAttributes };

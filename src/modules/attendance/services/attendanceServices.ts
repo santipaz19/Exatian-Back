@@ -16,7 +16,7 @@ export async function createEntry(employeeId: number, entryTime: Date) {
             throw new Error('Ya existe un registro abierto para este empleado');
         }
 
-        return await Attendance.create({ employeeId, entryTime });
+        return await Attendance.create({ employeeId, entryTime, companyId: employee.companyId });
     } catch (error) {
         throw error;
     }
@@ -70,9 +70,16 @@ export async function getAttendanceById(id: number) {
     }
 }
 
-export async function getAllAttendances() {
+export async function getAllAttendances(companyId?: number) {
     try {
+        // Construir where clause dinámicamente
+        const whereClause: any = {};
+        if (companyId) {
+            whereClause.companyId = companyId;
+        }
+
         return await Attendance.findAll({
+            where: whereClause,
             include: [{
                 model: Employee,
                 as: 'employee',
